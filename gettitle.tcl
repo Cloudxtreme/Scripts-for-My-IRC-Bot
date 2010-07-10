@@ -7,8 +7,11 @@
 package require http
 set urlpattern {(http|https)://[-A-Z0-9+&@#/%?=~_|!:,.;]*[-A-Z0-9+&@#/%=~_|]}
 
-set bitlyapi {R_7a0d1c3d308b4c789f1549c634319272d} #your api here
-set bitlylogin {angelbroz} #your but.ly user here
+#your api here
+set bitlyapi {R_7a0d1c3d308b4c789f1549c634319272d} 
+#your but.ly user here
+set bitlylogin {angelbroz} 
+
 set bitlyurl {http://api.bit.ly/v3/shorten?login=}
 set bitlyurl [concat $bitlyurl $bitlylogin "&apikey=" $bitlyapi "&longUrl="]
 
